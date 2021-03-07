@@ -1,7 +1,18 @@
 import '../styles/globals.css'
+import React from 'react'
 import Head from 'next/head'
+import {useRouter} from 'next/router'
 
 function MyApp ({Component, pageProps}) {
+  const {locale} = useRouter()
+  const lang = locale
+  const dir = locale === 'ar' ? 'rtl' : 'ltr'
+
+  React.useEffect(() => {
+    document.documentElement.lang = lang
+    document.documentElement.dir = dir
+  }, [lang, dir])
+
   return (
     <>
       <Head>
