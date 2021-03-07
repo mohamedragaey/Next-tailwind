@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: http://mohamedragaey.me/
+
+# Sitemaps
+Sitemap: http://mohamedragaey.me/sitemap.xml
