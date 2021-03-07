@@ -1,6 +1,10 @@
+import LanguageSwitcher from '../components/LanguageSwitcher'
+import TranslateHelper from '../components/TranslateHelper'
+
 export default function Home () {
   return (
     <main className='bg-white container m-auto mt-24 p-6 shadow'>
+      <LanguageSwitcher/>
       <h1 className='border-b border-red-500 mb-6 pb-3 text-2xl text-center text-red-900 transition uppercase'>
         Welcome to <a href="https://nextjs.org">Next.js!</a>
       </h1>
@@ -11,7 +15,7 @@ export default function Home () {
 
       <div>
         <a href="https://nextjs.org/docs">
-          <h3>Documentation &rarr;</h3>
+          <h3>{TranslateHelper().Home} &rarr;</h3>
           <p>Find in-depth information about Next.js features and API.</p>
         </a>
 
